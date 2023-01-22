@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Weather Dashboard</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link src="./assets/style.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Top Navbar -->
+    <nav class="navbar navbar-inverse visible-xs">
+        <div class="container-fluid">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Your Weather</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Left NavBar Pills -->
+    <div class="container-fluid">
+        <div class="row content">
+            <div class="col-sm-2 sidenav hidden-xs">
+                <h2>Your Weather</h2>
+                <ul class="nav navbar-nav">
+                    <li class="active">City: <input type="text" id="cityName"></li>
+                    <li class="btn btnEl searchBtn">
+                        <button id="searchBtn">Submit</button>
+                    </li>
+                    <li></li>
+                </ul>
+            </div>
+
+            <!-- Header Element -->
+            <div class="col-sm-10">
+                <div class="well">
+                    <h4 id="headerElement">Weather Forecast Dashboard</h4>
+                    <p>Here's your personalized weather dashboard</p>
+                </div>
+        <!-- 5 Day Forecast Grid/Containers -->
+            <!-- Day 1 Forecast -->
+                <div class="row">
+                    <div class="col-sm-2">
+                        <div class="well">
+                            <h4>Day 1</h4>
+                            <p>1 Million</p>
+                        </div>
+                    </div>
+                <!-- Day 2 Forecast -->
+                    <div class="col-sm-2">
+                        <div class="well">
+                            <h4>Day 2</h4>
+                            <p>100 Million</p>
+                        </div>
+                    </div>
+                <!-- Day 3 Forecast -->
+                    <div class="col-sm-2">
+                        <div class="well">
+                            <h4>Day 3</h4>
+                            <p>10 Million</p>
+                        </div>
+                    </div>
+                <!-- Day 4 Forecast -->
+                    <div class="col-sm-2">
+                        <div class="well">
+                            <h4>Day 4</h4>
+                            <p>30%</p>
+                        </div>
+                    </div>
+                <!-- Day 5 Forecast -->
+                    <div>
+                        <div class="col-sm-2">
+                            <div class="well">
+                                <h4>Day 5</h4>
+                                <p>30%</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+</body>
+
+</html>
