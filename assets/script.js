@@ -1,27 +1,29 @@
 // API Key: 49c095bcef09171182fa818f843823fc
+var APIkey = '49c095bcef09171182fa818f843823fc';
+var fetchButton = document.getElementById('searchBtn');
+var city = document.getElementById('cityName');
+var USstate;
+var country;
+var userInput;
 
-var cityNameEl = document.getElementById('cityName');
-var fetchButton = document.getElementById('submitCityBtn');
-var cityStateCtryApi = 'http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={49c095bcef09171182fa818f843823fc}';
-var requestUrlLatLon = 'api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={49c095bcef09171182fa818f843823fc}';
+// q= is the query parameter, where we can add any user input to specify the data that we want to request in the API call
+// concatenate the user input, which is stored in the variable city
+// concatenate the other required parameter, appid=
 
-function getApiLatLon() {
+const queryURL = "http://api.openweathermap.org/data/2.5/weather?q=" + city + "&appid=" + APIKey;
+fetch(queryURL);
 
-  fetch(requestUrlLatLon)
-    .then(function (response) {
-      return response.json();
-    })
-    .then(function (data) {
-      console.log(data);
-      for (var i = 0; i < data.length; i++) {
-        var cityName = document.createElement('h3');
-        cityName.textContent = data[i];
-        issueContainer.append(cityName);
-      }
-    
-    });
+ // Making an API call (request) function
+async function getUserInput() {
+  const response = await fetch(queryURL);
+
+  // Parsing to JSON 
+  const data = await response.json();
+  console.lot(data.results);
 }
 
-// http://api.openweathermap.org/geo/1.0/direct?q={city name},{state code},{country code}&limit={limit}&appid={API key}
+
+console.log(queryURL);
+
 fetchButton.addEventListener('click', getApiLatLon);
 
