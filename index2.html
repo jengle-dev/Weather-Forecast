@@ -6,9 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-    <link src="./assets/style.css" rel="stylesheet">
+    <link rel="stylesheet" src="./assets/style.css">
 </head>
 
 <body>
@@ -27,15 +25,20 @@
     </nav>
 
     <!-- Left NavBar Pills -->
-    <div class="container-fluid">
+    <div class="container text-center">
         <div class="row content">
-            <div class="col-sm-2 sidenav hidden-xs">
-                <h2>Your Weather</h2>
+            <div class="col-sm-2 align-self-start">
+                <h3>Your Weather</h3>
                 <ul class="nav navbar-nav">
-                    <li class="active">City: <input type="text" id="cityName"></li>
+                    <li class="active cityInput">City: <input type="text" id="cityName" placeholder="Enter a city here"></li>
+                    <!-- <li class="active stateInput">US State: <input type="text" id="usState"></li> -->
                     <li class="btn btnEl searchBtn">
                         <button id="searchBtn">Submit</button>
                     </li>
+                    <!-- <li class="active zipInput">or search by US Zip Code: <input type="text" id="zipCode"></li>
+                    <li class="btn btnEl searchZipBtn">
+                        <button id="searchZipBtn">Submit</button>
+                    </li> -->
                     <li></li>
                 </ul>
             </div>
@@ -90,5 +93,8 @@
         </div>
 
 </body>
-
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+<script src="assets/script.js"></script>
+<!-- <script src="assets/geolocation.js"></script> -->
 </html>
