@@ -32,13 +32,15 @@ N/A
 
 ## Visuals
 
-The following image(s) shows the web application's appearance and functionality:
+No visuals currently available because this page/site is still in development. 
+
+As-Is:
+
+![image](https://user-images.githubusercontent.com/117794203/214689889-6c499393-8372-4c15-ac3f-b1ab4cfe8f20.png)
 
 ## Support
 If there are issues with the site, please reach out to me, Jennifer Engle, at j.engle.dev@gmail.com and reference the site's URL. Please provide any screenshots and behavior along with your browser information.
 
-## Roadmap
-N/A
 
 ## Contributing
 I am open to collaboration for contributing to updates to this page. Please email me at j.engle.dev@gmail.com.
