@@ -15,35 +15,29 @@ var zip = document.getElementById('zipCode');
 // concatenate the other required parameter, appid=
 
 function getApi() {
-
   fetchButton.addEventListener('click', function () {
     // Insert the API url to get the user's input
-    const queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIKey;
+    // var APIkey = '49c095bcef09171182fa818f843823fc';
+
+    const queryURL = "https://api.openweathermap.org/data/2.5/forecast?q=" + city + "&appid=" + APIkey;
     console.log(queryURL);
 
     fetch(queryURL)
       // Making an API call (request) function
       .then(function (response) {
-          // const data = await response.json();
-          // Parsing to JSON 
+        // const data = await response.json();
+        // Parsing to JSON 
         return response.json();
       })
       .then(function (data) {
         // for (var i = 0; i < data.length; i++) {
         //   console.log(i);
-          // console.log(data.results);
+        // console.log(data.results);
         console.log(data);
         // }
 
-        window.addEventListener('unhandledrejection', function(event) {
-          // the event object has two special properties:
-          alert(event.promise); // [object Promise] - the promise that generated the error
-          alert(event.reason); // Error: Invalid City Name! - the unhandled error object
-        });
-        
-        new Promise(function() {
-          throw new Error("Invalid City Name");
-        }); // no catch to handle the error
-      })
+      }); // no catch to handle the error
   })
 }
+
+getApi();
