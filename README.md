@@ -54,3 +54,10 @@ No License is used on this site.
 ## Project Status
 - In Progress
 
+## References
+* https://openweathermap.org/forecast5
+* https://api.jqueryui.com/
+* https://getbootstrap.com/docs/5.3/getting-started/javascript/
+`api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`
+* https://openweathermap.org/forecast5#geocoding 
+

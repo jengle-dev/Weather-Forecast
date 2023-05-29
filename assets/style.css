@@ -7,6 +7,41 @@
       height: 100%;
     };
 
+    .search-area {
+      padding: 15px;
+      width: 60px;
+      margin-left: 20px;
+    }
+
+    header {
+      padding: 20px;
+      margin: 20px;
+    }
+    /* .forecast-title {
+      display: flex;
+      justify-content: end;
+      margin: 20px;
+    }  */
+
+    h3.forecast-title {
+      display: flex;
+      justify-content: end;
+      margin: 20px;
+
+    }
+
+    .card {
+      border-radius: 10px;
+    }
+
+    .container {
+      display: flex;
+    }
+
+    .element-box {
+      padding: 10px;
+      margin: 10px;
+    }
 
     /* On small screens, set height to 'auto' for the grid */
     @media screen and (max-width: 767px) {
