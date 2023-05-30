@@ -60,4 +60,5 @@ No License is used on this site.
 * https://getbootstrap.com/docs/5.3/getting-started/javascript/
 `api.openweathermap.org/data/2.5/forecast?lat={lat}&lon={lon}&appid={API key}`
 * https://openweathermap.org/forecast5#geocoding 
+* ChatGPT to assist with code errors and research.
 
